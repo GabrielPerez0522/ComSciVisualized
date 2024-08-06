@@ -27,3 +27,5 @@ All notable changes to this project will be documented in this file.
 
 - Add skeleton fpr graphs and specifically BFS (88fbca92f9b1aab159377c4c7910d73ddcbb46bf)
 
+- Semi-functional getty added (477b8245bb173513d99630f4fedbdcb0e285c6fb)
+
