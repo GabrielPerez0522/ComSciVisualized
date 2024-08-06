@@ -1,0 +1,34 @@
+[changelog]
+header = """
+# Changelog
+
+All notable changes to this project will be documented in this file.
+"""
+
+body = """
+{% for group, commits in commits | group_by(attribute="group") %}
+## {{ group | upper_first }}
+
+{% for commit in commits %}
+- {{ commit.message | upper_first }} ({{ commit.hash }})
+{% endfor %}
+{% endfor %}
+"""
+
+[template]
+commit = """
+- {{ .summary }} ({{ .hash }})
+"""
+
+[template.sections]
+feat = { title = "Features" }
+fix = { title = "Bug Fixes" }
+docs = { title = "Documentation" }
+style = { title = "Styling" }
+refactor = { title = "Refactoring" }
+perf = { title = "Performance Improvements" }
+test = { title = "Tests" }
+chore = { title = "Chores" }
+
+[filters]
+exclude_merge_commits = true
