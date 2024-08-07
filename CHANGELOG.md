@@ -29,3 +29,5 @@ All notable changes to this project will be documented in this file.
 
 - Semi-functional getty added (477b8245bb173513d99630f4fedbdcb0e285c6fb)
 
+- Add functional Jetty server to web application (e1ec6a37eb5d42d7d35337010758abe5126a1491)
+
